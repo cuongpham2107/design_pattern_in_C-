@@ -32,7 +32,7 @@ public class Singleton
 Factory Method
 Mô tả: Định nghĩa một interface để tạo một đối tượng, nhưng để các lớp con quyết định lớp nào sẽ được khởi tạo. Factory Method cho phép một lớp hoãn việc khởi tạo đối tượng cho các lớp con.
 Ví dụ: Tạo các đối tượng hình học khác nhau như hình tròn, hình vuông.
-```
+```C#
 public abstract class Creator
 {
     public abstract IProduct FactoryMethod();
@@ -53,7 +53,7 @@ public class ProductA : IProduct { }
 Adapter
 Mô tả: Chuyển đổi interface của một lớp thành một interface khác mà client mong đợi. Adapter cho phép các lớp làm việc cùng nhau mà lẽ ra không thể do không tương thích về interface.
 Ví dụ: Kết nối một hệ thống cũ với một hệ thống mới.
-```
+```C#
 public interface ITarget
 {
     void Request();
@@ -82,7 +82,7 @@ public class Adapter : ITarget
 Decorator
 Mô tả: Gắn trách nhiệm bổ sung cho một đối tượng một cách linh hoạt. Decorator cung cấp một giải pháp thay thế cho việc kế thừa để mở rộng chức năng.
 Ví dụ: Thêm các chức năng bổ sung cho các component UI.
-```
+```C#
 public interface IComponent
 {
     string Operation();
@@ -120,13 +120,13 @@ public class ConcreteDecoratorA : Decorator
         return $"ConcreteDecoratorA({base.Operation()})";
     }
 }
-```
+```C#
 3. Behavioral Patterns
 Observer
 Mô tả: Định nghĩa một phụ thuộc một-nhiều giữa các đối tượng sao cho khi một đối tượng thay đổi trạng thái, tất cả các đối tượng phụ thuộc của nó đều được thông báo và cập nhật tự động.
 Ví dụ: Hệ thống sự kiện, giao diện người dùng.
 
-```
+```C#
 public interface IObserver
 {
     void Update(ISubject subject);
@@ -167,7 +167,7 @@ Strategy
 Mô tả: Định nghĩa một họ thuật toán, đóng gói từng thuật toán, và làm cho chúng có thể hoán đổi cho nhau. Strategy cho phép thuật toán thay đổi độc lập với các client sử dụng nó.
 Ví dụ: Các thuật toán sắp xếp khác nhau.
 
-```
+```C#
 public interface IStrategy
 {
     void Execute();
