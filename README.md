@@ -1,8 +1,8 @@
 # design_pattern_in_C-
 Trong C#, có nhiều design pattern phổ biến được sử dụng để giải quyết các vấn đề khác nhau trong phát triển phần mềm. Dưới đây là một số design pattern phổ biến nhất:
 
-1. Creational Patterns
-Singleton
+<h1>1. Creational Patterns</h1>
+<h3>Singleton</h3>
 Mô tả: Đảm bảo rằng một lớp chỉ có một instance duy nhất và cung cấp một điểm truy cập toàn cục tới nó.
 Ví dụ: Quản lý kết nối tới cơ sở dữ liệu.
 ```C#
