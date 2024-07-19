@@ -120,7 +120,7 @@ public class ConcreteDecoratorA : Decorator
         return $"ConcreteDecoratorA({base.Operation()})";
     }
 }
-```C#
+```
 3. Behavioral Patterns
 Observer
 Mô tả: Định nghĩa một phụ thuộc một-nhiều giữa các đối tượng sao cho khi một đối tượng thay đổi trạng thái, tất cả các đối tượng phụ thuộc của nó đều được thông báo và cập nhật tự động.
