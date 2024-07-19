@@ -5,7 +5,7 @@ Trong C#, có nhiều design pattern phổ biến được sử dụng để gi�
 Singleton
 Mô tả: Đảm bảo rằng một lớp chỉ có một instance duy nhất và cung cấp một điểm truy cập toàn cục tới nó.
 Ví dụ: Quản lý kết nối tới cơ sở dữ liệu.
-```
+```C#
 public class Singleton
 {
     private static Singleton _instance;
