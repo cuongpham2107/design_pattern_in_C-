@@ -5,8 +5,7 @@ Trong C#, có nhiều design pattern phổ biến được sử dụng để gi�
 Singleton
 Mô tả: Đảm bảo rằng một lớp chỉ có một instance duy nhất và cung cấp một điểm truy cập toàn cục tới nó.
 Ví dụ: Quản lý kết nối tới cơ sở dữ liệu.
-csharp
-Sao chép mã
+
 public class Singleton
 {
     private static Singleton _instance;
@@ -29,11 +28,11 @@ public class Singleton
         }
     }
 }
+
 Factory Method
 Mô tả: Định nghĩa một interface để tạo một đối tượng, nhưng để các lớp con quyết định lớp nào sẽ được khởi tạo. Factory Method cho phép một lớp hoãn việc khởi tạo đối tượng cho các lớp con.
 Ví dụ: Tạo các đối tượng hình học khác nhau như hình tròn, hình vuông.
-csharp
-Sao chép mã
+
 public abstract class Creator
 {
     public abstract IProduct FactoryMethod();
@@ -49,12 +48,12 @@ public class ConcreteCreatorA : Creator
 
 public interface IProduct { }
 public class ProductA : IProduct { }
+
 2. Structural Patterns
 Adapter
 Mô tả: Chuyển đổi interface của một lớp thành một interface khác mà client mong đợi. Adapter cho phép các lớp làm việc cùng nhau mà lẽ ra không thể do không tương thích về interface.
 Ví dụ: Kết nối một hệ thống cũ với một hệ thống mới.
-csharp
-Sao chép mã
+
 public interface ITarget
 {
     void Request();
@@ -79,11 +78,11 @@ public class Adapter : ITarget
         _adaptee.SpecificRequest();
     }
 }
+
 Decorator
 Mô tả: Gắn trách nhiệm bổ sung cho một đối tượng một cách linh hoạt. Decorator cung cấp một giải pháp thay thế cho việc kế thừa để mở rộng chức năng.
 Ví dụ: Thêm các chức năng bổ sung cho các component UI.
-csharp
-Sao chép mã
+
 public interface IComponent
 {
     string Operation();
@@ -121,12 +120,13 @@ public class ConcreteDecoratorA : Decorator
         return $"ConcreteDecoratorA({base.Operation()})";
     }
 }
+
 3. Behavioral Patterns
 Observer
 Mô tả: Định nghĩa một phụ thuộc một-nhiều giữa các đối tượng sao cho khi một đối tượng thay đổi trạng thái, tất cả các đối tượng phụ thuộc của nó đều được thông báo và cập nhật tự động.
 Ví dụ: Hệ thống sự kiện, giao diện người dùng.
-csharp
-Sao chép mã
+
+
 public interface IObserver
 {
     void Update(ISubject subject);
@@ -161,11 +161,13 @@ public class ConcreteSubject : ISubject
         }
     }
 }
+
+
 Strategy
 Mô tả: Định nghĩa một họ thuật toán, đóng gói từng thuật toán, và làm cho chúng có thể hoán đổi cho nhau. Strategy cho phép thuật toán thay đổi độc lập với các client sử dụng nó.
 Ví dụ: Các thuật toán sắp xếp khác nhau.
-csharp
-Sao chép mã
+
+
 public interface IStrategy
 {
     void Execute();
