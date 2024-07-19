@@ -1,5 +1,5 @@
 # design_pattern_in_C-
-Trong C#, có nhiều design pattern phổ biến được sử dụng để giải quyết các vấn đề khác nhau trong phát triển phần mềm. Dưới đây là một số design pattern phổ biến nhất:
+<p>Trong C#, có nhiều design pattern phổ biến được sử dụng để giải quyết các vấn đề khác nhau trong phát triển phần mềm. Dưới đây là một số design pattern phổ biến nhất:</p>
 
 <h1>1. Creational Patterns</h1>
 <h3>Singleton</h3>
@@ -49,8 +49,10 @@ public class ConcreteCreatorA : Creator
 public interface IProduct { }
 public class ProductA : IProduct { }
 ```
-2. Structural Patterns
-Adapter
+
+<h1>2. Structural Patterns</h1>
+<h3>Adapter</h3>
+
 Mô tả: Chuyển đổi interface của một lớp thành một interface khác mà client mong đợi. Adapter cho phép các lớp làm việc cùng nhau mà lẽ ra không thể do không tương thích về interface.
 Ví dụ: Kết nối một hệ thống cũ với một hệ thống mới.
 ```C#
@@ -79,7 +81,9 @@ public class Adapter : ITarget
     }
 }
 ```
-Decorator
+
+<h3>Decorator</h3>
+
 Mô tả: Gắn trách nhiệm bổ sung cho một đối tượng một cách linh hoạt. Decorator cung cấp một giải pháp thay thế cho việc kế thừa để mở rộng chức năng.
 Ví dụ: Thêm các chức năng bổ sung cho các component UI.
 ```C#
@@ -121,8 +125,9 @@ public class ConcreteDecoratorA : Decorator
     }
 }
 ```
-3. Behavioral Patterns
-Observer
+
+<h1>3. Behavioral Patterns</h1>
+<h3>Observer</h3>
 Mô tả: Định nghĩa một phụ thuộc một-nhiều giữa các đối tượng sao cho khi một đối tượng thay đổi trạng thái, tất cả các đối tượng phụ thuộc của nó đều được thông báo và cập nhật tự động.
 Ví dụ: Hệ thống sự kiện, giao diện người dùng.
 
@@ -163,7 +168,8 @@ public class ConcreteSubject : ISubject
 }
 
 ```
-Strategy
+
+<h3>Strategy</h3>
 Mô tả: Định nghĩa một họ thuật toán, đóng gói từng thuật toán, và làm cho chúng có thể hoán đổi cho nhau. Strategy cho phép thuật toán thay đổi độc lập với các client sử dụng nó.
 Ví dụ: Các thuật toán sắp xếp khác nhau.
 
