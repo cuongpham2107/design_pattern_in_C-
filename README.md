@@ -3,6 +3,7 @@
 
 <h1>1. Creational Patterns</h1>
 <h3>Singleton</h3>
+
 Mô tả: Đảm bảo rằng một lớp chỉ có một instance duy nhất và cung cấp một điểm truy cập toàn cục tới nó.
 Ví dụ: Quản lý kết nối tới cơ sở dữ liệu.
 ```C#
